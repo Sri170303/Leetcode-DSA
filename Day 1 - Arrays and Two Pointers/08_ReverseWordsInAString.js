@@ -22,6 +22,7 @@ function reverseWordsInAString(s) {
     return result;
 }
 
+// if the question does not have multiple spaces in between words
 function check(s) {
     return s.split(' ').reverse().join(' ').trim();
 }
