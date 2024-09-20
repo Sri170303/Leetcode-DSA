@@ -5,4 +5,7 @@
 - [Reverse a String](https://leetcode.com/problems/reverse-string/)
 - [Square of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/)
 - [Three Sum](https://leetcode.com/problems/3sum/)
-
+- [Sort Colors](https://leetcode.com/problems/sort-colors/)
+- [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/)
+- [Four Sum](https://leetcode.com/problems/4sum/description/)
+- [Move Zeroes](https://leetcode.com/problems/move-zeroes/)
