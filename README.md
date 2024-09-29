@@ -15,3 +15,14 @@
 - [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/description/)
 - [Two Sum](https://leetcode.com/problems/two-sum/)
 - [Two Sum II](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+
+
+#### Sorting Techniques
+- [Selection Sort]()
+- [Bubble Sort]()
+- [Insertion Sort]()
+- [Recursive Bubble Sort]()
+- [Recursive Selection Sort]()
+- [Merge Two Sorted Arrays](https://leetcode.com/problems/merge-sorted-array/)
+- [Merge Sort]()
