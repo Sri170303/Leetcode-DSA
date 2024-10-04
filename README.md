@@ -28,3 +28,7 @@
 - [Merge Two Sorted Arrays](https://leetcode.com/problems/merge-sorted-array/)
 - [Merge Sort]()
 - [Merge Two Sorted Arrays Without Any Extra Space](https://leetcode.com/problems/merge-sorted-array/)
+
+
+##### Adhoc
+- [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/)
