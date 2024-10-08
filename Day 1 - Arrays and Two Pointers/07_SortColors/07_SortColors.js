@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/sort-colors/
 
 function sortColors(nums) {
-    let n = nums.length;
     let i = 0, j = 0, k = n - 1;
 
     while (j <= k) {
