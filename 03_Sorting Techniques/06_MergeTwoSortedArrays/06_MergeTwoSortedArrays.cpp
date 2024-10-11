@@ -3,33 +3,40 @@
 #include<algorithm>
 using namespace std;
 
-vector<int> mergeTwoSortedArrays(vector<int> &num1, vector<int> &num2) {
-    vector<int> result;
-    int i = 0, j = 0;
-    while (i <  num1.size() && j <= num2.size()) {
-        if (num1[i] < num2[j]) 
-            result.push_back(num1[i++]);
-        else 
-            result.push_back(num2[j++]);
-    }
+class Solution {
+public:
+    void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
 
-    while (i < num1.size()) {
-        result.push_back(num1[i++]);
-    }
-    while (i < num2.size()) {
-        result.push_back(num2[j++]);
-    }
+        int i = m - 1, j = n - 1, k = m + n - 1;
 
-    return result;
-}
+        while (i >=0 && j >= 0) {
+            if (nums1[i] >= nums2[j]) 
+                nums1[k--] = nums1[i--];
+            else
+                nums1[k--] = nums2[j--];
+        }
+
+        while (i >= 0) {
+            nums1[k--] = nums1[i--];
+        }
+
+        while (j >= 0) {
+            nums1[k--] = nums2[j--];
+        }
+
+    }
+};
 
 
 
 int main() {
-    vector<int> num1 = {-1, 22, 144, 500, 1111, 20000};
-    vector<int> num2 = {-11, 222, 1244, 5000, 11211, 20000};
-    vector<int> result = mergeTwoSortedArrays(num1, num2);
-    for (auto x: result) {
+    Solution s;
+    vector<int> nums1 = {-1, 22, 144, 500, 1111, 20000, 0, 0, 0, 0, 0, 0};
+    vector<int> nums2 = {-11, 222, 1244, 5000, 11211, 20000};
+    int m = nums1.size() - nums2.size();
+    int n = nums2.size();
+    s.merge(nums1, m, nums2, n);
+    for (auto x: nums1) {
         cout << x << ' ';
     }
     return 0;
