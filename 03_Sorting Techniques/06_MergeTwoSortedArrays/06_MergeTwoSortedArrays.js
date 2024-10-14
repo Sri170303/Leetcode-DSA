@@ -1,6 +1,8 @@
 // https://leetcode.com/problems/merge-sorted-array/
 
 function mergeTwoSortedArrays(nums1, m, nums2, n) {
+
+    // here I have used extra space to hold the sorted array
     let sortedArr = new Array(m+n);
     let i = 0, j = 0, k = 0;
     while (i < m && j < n) {
